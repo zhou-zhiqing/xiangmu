@@ -1,3 +1,6 @@
+html,body{
+	background: #f4f4f4;
+}
 #top_warpper{
 	height: 30px;
 	background: #fafafa;
@@ -65,7 +68,7 @@
 	display: block;
 	width: 240px;
 	height: 72px;
-	background:url(../images/logo.jpg) no-repeat;
+	background:url(../images/logo.png) no-repeat;
 	text-indent: -9999px;
 }
 .h_center{
@@ -155,5 +158,90 @@
 	float: left;
 	width: 123px;
 	font-size: 14px;
+    text-align: center;
+}
+.nav ul li a{
+    color: #fff;
+}
+
+/* banner开始 */
+#banner{
+    width: 100%;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+.banner li a{
+    display: block;
+    width: 1920px;
+    height: 600px;
+}
+.order{
+    width: 192px;
+    height: 60px;
+    position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -96px;
+	display: flex;
+	justify-content: space-around;
+}
+#banner ol li{
+	width: 16px;
+	height: 16px;
+	background: #000;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 16px;
 	text-align: center;
 }
+#banner .round{
+	background:#ff0300;
+}
+/* 主体内容 */
+#main{
+	background: #f4f4f4;
+}
+.main_1 ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.img_01{
+	width: 585px;
+}
+.main_1 ul li{
+	margin-top: 40px;
+}
+/* 合作伙伴 */
+.cooperate ul{
+	height: 106px;
+	background: #fff;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.cooperate ul li{
+	margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
