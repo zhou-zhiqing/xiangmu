@@ -210,6 +210,7 @@ html,body{
 /* 主体内容 */
 #main{
 	background: #f4f4f4;
+	padding-bottom: 60px;
 }
 .main_1 ul{
 	display: flex;
@@ -357,9 +358,29 @@ html,body{
 .yd_right a span:hover{
 	text-decoration: underline;
 }
-
-
-
+/* 为您推荐 */
+.list{
+	margin-top: 40px;
+}
+.list_top{
+	margin-bottom: 0;
+}
+.list_ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: #fff;
+	padding:25px 35px 0 15px;
+}
+.list_ul li a:last-child{
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+}
+/* 底部导航 */
 
 
 
