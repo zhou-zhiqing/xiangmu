@@ -161,6 +161,9 @@ html,body{
     text-align: center;
 }
 .nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
     color: #fff;
 }
 
@@ -230,6 +233,137 @@ html,body{
 .cooperate ul li{
 	margin-top: 8px;
 }
+/* 运动表现 */
+.yd_move{
+	margin-top: 40px;
+	background: #f4f4f4;
+}
+.yd_top{
+	width: 100%;
+	height: 34px;
+	border-bottom: 2px solid #000;
+	margin-bottom: 20px;
+}
+.yd_top h2{
+	float: left;
+	line-height: 34px;
+	font-size: 18px;
+	font-weight: 900;
+}
+.yd_top h2 span{
+	display: inline-block;
+	width:30px;
+	height: 30px;
+	background: #000;
+	margin-right: 20px;
+	color: #fff;
+	text-align: center;
+	margin-left: 10px;
+}
+.yd_top div{
+	float: right;
+	line-height: 34px;
+}
+.yd_top div a{
+	font-size: 16px;
+	padding-left: 15px;
+}
+.yd_footer{
+	display: flex;
+	justify-content: space-between;
+}
+.yd_left{
+	width: 160px;
+	height: 530px;
+	background: #fff;
+}
+.yd_left_top{
+	width: 100%;
+	height: 65px;
+	background: #181c1f;
+	display: flex;
+	justify-content: space-around;
+	line-height: 65px;
+}
+.yd_left_top a{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 0 15px;
+}
+.yd_left_top span{
+	display: inline-block;
+	width: 1px;
+	height: 25px;
+	background: #fff;
+	margin-top: 20px;
+}
+.photo{
+	display: block;
+	width: 130px;
+	height: 130px;
+	margin: 20px auto;
+}
+.photo img{
+	border-radius: 50%;
+}
+.yd_nav{
+	width: 160px;
+	height: 145px;
+	padding-left: 15px;
+}
+.yd_nav ul{
+	float: left;
+	width: 65px;
+}
+.yd_nav ul li{
+	height: 26px;
+}
+.yd_nav ul li a{
+	font-size: 16px;
+	font-weight: 900;
+	color: #000;
+}
+.yd_nav ul li a:hover{
+	text-decoration: underline;
+}
+.yd_right{
+	width: 510px;
+}
+.yd_right a{
+	float: left;
+	width: 250px;
+	background: #fff;
+	margin-bottom: 10px;
+	position: relative;
+}
+.yd_img_style{
+	height: 350px;
+}
+.yd_interval{
+	margin-right: 10px;
+}
+.yd_right .yd_bottom{
+	margin-bottom:0;
+}
+.yd_right a span{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+}
+.yd_right a span:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 
 
