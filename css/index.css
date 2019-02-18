@@ -80,10 +80,11 @@ html,body{
 }
 .h_center form .tex{
 	float: left;
-	width: 378px;
+	width: 368px;
 	height: 30px;
 	border: 2px solid #80383c;
 	border-right:0;
+	padding-left: 10px;
 }
 .h_center form .btn{
 	float: left;
@@ -99,6 +100,9 @@ html,body{
 }
 .h_center div a{
 	padding-left: 11px;
+}
+.h_center div a:hover{
+	text-decoration: underline;
 }
 .h_center div .a01{
 	padding-left:0;
