@@ -35,6 +35,20 @@ html,body{
 	float: left;
 	padding:0 17px;
 }
+.t_right_li{
+	position: relative;
+}
+.t_right ul li img{
+	width: 90px;
+	height: 130px;
+	position: absolute;
+	top:30px;
+	z-index: 10;
+	display: none;
+}
+.t_right_li:hover img{
+	display: block;
+}
 .iconfont{
 	font-size: 12px;
 }
