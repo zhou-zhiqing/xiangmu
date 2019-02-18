@@ -1,0 +1,202 @@
+html,body{
+	background: #f4f4f4;
+}
+#top_warpper{
+	height: 30px;
+	background: #fafafa;
+}
+.content{
+	width: 1200px;
+	margin:0 auto;
+}
+.top{
+	height: 30px;
+	background: #FAFAFA;
+	line-height: 30px;
+}
+.t_left{
+	float: left;
+	width: 270px;
+}
+.t_left p{
+	float: left;
+	padding-left: 15px;
+}
+.t_left a{
+	float: right;
+}
+.pad{
+	padding-left: 5px;
+}
+.t_right{
+	float: right;
+}
+.t_right ul li{
+	float: left;
+	padding:0 17px;
+}
+.iconfont{
+	font-size: 12px;
+}
+.icon-sj{
+	padding-right: 5px;
+	color: red;
+}
+.icon-jt{
+	padding-left: 5px;
+}
+.icon-gwc{
+	padding-right: 5px;
+	color: red;
+}
+/*头部开始*/
+#header_warpper{
+	height:100px;
+	background: #fff;
+}
+#header{
+	height:100px;
+	background: #fff;
+	line-height: 100px;
+}
+.logo{
+	float: left;
+	padding-top: 14px;
+	margin-left: 108px;
+}
+.logo h1 a{
+	display: block;
+	width: 240px;
+	height: 72px;
+	background:url(../images/logo.png) no-repeat;
+	text-indent: -9999px;
+}
+.h_center{
+	float: left;
+	margin-left: 52px;
+}
+.h_center form{
+	margin-top: 25px;
+}
+.h_center form .tex{
+	float: left;
+	width: 378px;
+	height: 30px;
+	border: 2px solid #80383c;
+	border-right:0;
+}
+.h_center form .btn{
+	float: left;
+	width: 82px;
+	height: 36px;
+	border: 0;
+	background: #c81324;
+}
+.h_center div{
+	height: 38px;
+	line-height: 38px;
+	color: #676767;
+}
+.h_center div a{
+	padding-left: 11px;
+}
+.h_center div .a01{
+	padding-left:0;
+}
+.h_right{
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+	width: 210px;
+	height: 70px;
+	position: relative;
+	overflow: hidden;
+}
+.h_right ul{
+	width: 1000%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.h_right ul li{
+	float: left;
+}
+/*导航开始*/
+#nav_warpper{
+	height:39px;
+	background:#000;
+}
+.nav{
+	height:39px;
+	background:#000;
+	line-height: 39px;
+	position: relative;
+	z-index: 5;
+}
+nav .classify{
+    float: left;
+}
+.nav span{
+	float: left;
+	width: 216px;
+	background: red;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+.nav_02{
+	width: 216px;
+	height:700px;
+	background: #000;
+	display: none;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	z-index: 5;
+}
+.nav ul{
+	float: right;
+}
+.nav ul li{
+	float: left;
+	width: 123px;
+	font-size: 14px;
+    text-align: center;
+}
+.nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+    color: #fff;
+}
+/* 主体开始 */
+#loginbg{
+    background: url(images/login_bg.jpg) no-repeat center center;
+    margin-left: -255px;
+}
+.login-main{
+    height: 460px;
+    width: 950px;
+    position: relative;
+    margin: 0 auto;
+}
+.ov{
+    overflow: hidden;
+}
+.login-box {
+    padding: 15px;
+    width: 300px;
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    background: #fff;
+    height: 300px;
+    overflow: hidden;
+    color: #9b9b9b;
+}
+.Myorder2 {
+    padding: 15px 30px 5px 10px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+}
