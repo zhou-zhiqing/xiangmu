@@ -178,11 +178,17 @@ html,body{
 	font-size: 14px;
     text-align: center;
 }
+.nav ul li:hover{
+	background: #eee;
+}
 .nav ul li a{
 	display: block;
 	width: 100%;
 	height: 100%;
     color: #fff;
+}
+.nav ul li a:hover{
+	color: red;
 }
 
 /* banner开始 */

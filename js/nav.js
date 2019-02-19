@@ -4,6 +4,10 @@ var navFixed = (function(){
             this.ele = document.querySelector(ele);
             this.nav_l = this.ele.offsetLeft;
             this.nav_t = this.ele.offsetTop;
+            this.nav_02 = document.querySelector('.nav_02');
+            this.classify = document.querySelector('.classify');
+            this.nav_03 = document.querySelector('.nav_03');
+            this.navLi = this.nav_03.children;
             this.event();
         },
         event(){
@@ -19,6 +23,30 @@ var navFixed = (function(){
                     _$this.ele.style.position = "relative";
                     _$this.ele.style.left = 0;
                 }
+            }
+            _$this.classMouseenter();
+            _$this.classMouseleave();
+            _$this.popMouseenter();
+            _$this.popMouseleave();
+        },
+        classMouseenter(){
+            _$this.classify.onmouseenter = function(){
+                _$this.nav_02.style.display = 'block';
+            }
+        },
+        classMouseleave(){
+            _$this.classify.onmouseleave = function(){
+                _$this.nav_02.style.display = 'none';
+            }
+        },
+        popMouseenter(){
+            _$this.nav_02.onmouseenter = function(){
+                _$this.nav_02.style.display = 'block';
+            }
+        },
+        popMouseleave(){
+            _$this.nav_02.onmouseleave = function(){
+                _$this.nav_02.style.display = 'none';
             }
         }
     }
