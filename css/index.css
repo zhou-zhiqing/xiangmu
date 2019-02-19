@@ -147,9 +147,9 @@ html,body{
 .nav{
 	height:39px;
 	background:#000;
-	line-height: 39px;
 	position: relative;
-	z-index: 5;
+	line-height: 39px;
+	z-index: 6;
 }
 .nav span{
 	float: left;
@@ -167,7 +167,7 @@ html,body{
 	position: absolute;
 	top: 39px;
 	left: 0;
-	z-index: 5;
+	z-index: 6;
 }
 .nav ul{
 	float: right;
