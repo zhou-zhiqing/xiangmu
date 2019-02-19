@@ -103,13 +103,112 @@
         </div>
     </div>
     <!-- 主体开始 -->
-    <div id="loginbg"><img src="images/login_bg.jpg" alt="">
+    <div id="loginbg">
         <div class="login-main ov">
             <div class="login-box">
-                <h2 class="Myorder2"><a href="#">免费注册>></a>用户登录</h2>
+                <h2 class="Myorder2">用户登录<a href="#">免费注册>></a></h2>
+            </div>
+            <form action="" id="form">
+                <input type="text" id="user" name="user">
+                <input type="text" id="pass" name="pwd">
+                <a href="">忘记密码?</a>
+                <button id="btn">登录</button>
+            </form>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <div id="footer">
+        <div class="footer_nav content">
+            <div class="footer_nav_l">
+                <div class="footer_nav_ul">
+                    <ul>
+                        <h3>关于我们</h3>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                    <ul>
+                        <h3>购物指南</h3>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">用户注册</a></li>
+                        <li><a href="#">购物流程</a></li>
+                    </ul>
+                    <ul>
+                        <h3>售后服务</h3>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">防伪查询</a></li>
+                        <li><a href="#">发票制度</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_nav_r">
+                <p>400-008-7666</p>
+                <p>周一至周日 8:30-21:30</p>
+                <a href="#"><img src="images/zxkf1.png"/></a>
+                <p>周一至周日 9:00-23:00</p>
             </div>
         </div>
     </div>
+    <!-- 图片 -->
+    <div id="footer_img">
+        <div class="footer_img content">
+            <img src="images/x-footer.jpg" />
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div id="copy">
+        <div class="copy content">
+            <ul>
+                <li>
+                    <a href="#">关于特步</a>
+                </li><span></span>
+                <li>
+                    <a href="#">关注中心</a>
+                </li><span></span>
+                <li>
+                    <a href="#">友情链接</a>
+                </li><span></span>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+            </ul>
+            <p>特步跑鞋 Copyright 2011 xtep.com 特步运动服 All Rights Reserved 特步官方旗舰店 ICP：闽ICP备05021253号-1 特步官网专卖店</p>
+            <a href="#" class="copy_a">
+                <span><img src="images/pg.png"/></span>
+                闽公网安备 35020302001628号
+            </a>
+        </div>
+    </div>
+    <!-- 底部图片 -->
+    <div id="img">
+        <div class="img comtent">
+            <ul>
+                <li><img src="images/onlinepay.jpg" /></li>
+                <li><a href="#"><img src="images/goodwebsite.jpg" /></a></li>
+                <li><a href="#"><img src="images/salf.jpg" /></a></li>
+                <li><a href="#"><img src="images/ei_normal.png" /></a></li>
+                <li><a href="#"><img src="images/brand_bottom_large.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        var $form = document.querySelector('#form');
+        btn.onclick = function(e){
+            e = e || window.event;
+            e.preventDefault(); 
+            sendAjax('admin/login/php',{
+                type:'POST',
+                data:{
+                    username:$form['user'].value,
+                    pwd:$form['pwd'].value
+                },
+                success(data){
+                    console.log(data);
+                }
+            })
 
+            
+        }
+    </script>
 </body>
 </html>
