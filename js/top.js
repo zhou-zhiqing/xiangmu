@@ -5,22 +5,22 @@ var smallSwiper = (function(){
             this.index = 0;
             this.liAll = this.ele.children;
             this.event();
-            _this = this;
         },
         event(){
+            $this = this;
             setInterval(animatePlay,2000);
             function animatePlay(){
-                if(_this.index == _this.liAll.length-1){
-                    _this.ele.style.left = 0;
-                    _this.index = 1;
+                if($this.index == $this.liAll.length-1){
+                    $this.ele.style.left = 0;
+                    $this.index = 1;
 
                 }else{
-                    _this.index++;
+                    $this.index++;
                 }
                 var obj = {
-                    ele:_this.ele,
+                    ele:$this.ele,
                     param:{
-                        left:-_this.index*210
+                        left:-$this.index*210
                     },
                     speedTime:20
                 }
@@ -29,3 +29,4 @@ var smallSwiper = (function(){
         }
     }
 }());
+smallSwiper.init('.h_right_ban');

@@ -198,10 +198,10 @@ html,body{
     left: 50%;
     margin-left: -960px;
 }
-.banner li a{
-    display: block;
-    width: 1920px;
-    height: 600px;
+.banner li{
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .order{
     width: 192px;
