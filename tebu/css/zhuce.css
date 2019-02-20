@@ -208,9 +208,31 @@ nav .classify{
 	position: absolute;
 	top:40px;
 }
+.inp{
+	position: absolute;
+	left:640px;
+	top:85px;
+}
+.inp a{
+	display: block;
+	margin-top:20px;
+	margin-right:-30px;
+	height: 20px;
+	width: 70px;
+	line-height: 20px;
+	float: right;
+}
+#btn{
+	position: absolute;
+	left:0px;
+	top:130px;
+	height: 40px;
+	width: 170px;
+}
 #user{
 	background: url(../images/username.gif) no-repeat left;
 	display: block;
+	margin-bottom:10px;
 }
 #pass{
 	background: url(../images/password.gif) no-repeat left;
