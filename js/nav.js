@@ -2,7 +2,6 @@ var navFixed = (function(){
     return{
         init(ele){
             this.ele = document.querySelector(ele);
-            this.nav_l = this.ele.offsetLeft;
             this.nav_t = this.ele.offsetTop;
             this.nav_02 = document.querySelector('.nav_02');
             this.classify = document.querySelector('.classify');
@@ -13,12 +12,13 @@ var navFixed = (function(){
         event(){
             _$this = this;
             window.onscroll = function(){
+                nav_l = _$this.ele.offsetLeft;
                 scrollT = document.documentElement.scrollTop || document.body.scrollTop;
-                console.log(scrollT);
                 if(scrollT >= _$this.nav_t){
                     _$this.ele.style.position = "fixed";
                     _$this.ele.style.top = 0;
-                    _$this.ele.style.left = _$this.nav_l + 'px';
+                    _$this.ele.style.left = nav_l + "px";
+                    console.log(_$this.nav_l);
                 }else{
                     _$this.ele.style.position = "relative";
                     _$this.ele.style.left = 0;
