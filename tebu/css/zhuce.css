@@ -210,32 +210,42 @@ nav .classify{
 }
 .inp{
 	position: absolute;
-	left:640px;
+	left:622px;
 	top:85px;
 }
 .inp a{
 	display: block;
 	margin-top:20px;
-	margin-right:-30px;
+	margin-right:-20px;
 	height: 20px;
 	width: 70px;
 	line-height: 20px;
 	float: right;
+}
+.inp2{
+	position: absolute;
+	left:0px;
+	top:150px;
 }
 #btn{
 	position: absolute;
 	left:0px;
 	top:130px;
 	height: 40px;
-	width: 170px;
+	width: 260px;
+	border-radius: 5px;
+	background:darkred;
+	color: white;
 }
 #user{
 	background: url(../images/username.gif) no-repeat left;
 	display: block;
+	width: 260px;
 	margin-bottom:10px;
 }
 #pass{
 	background: url(../images/password.gif) no-repeat left;
+	width: 260px;	
 }
 /* 底部导航 */
 #footer{
