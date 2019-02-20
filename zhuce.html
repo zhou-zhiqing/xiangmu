@@ -190,13 +190,13 @@
             </ul>
         </div>
     </div>
-    <script src="js/ajax0.1.0.js"></script>
+    <script src="js/ajax.js"></script>
     <script>
         var $form = document.querySelector('#form');
         btn.onclick = function(e){
             e = e || window.event;
             e.preventDefault(); 
-            sendAjax('admin/login/php',{
+            sendAjax('admin/php/login.php',{
                 type:'POST',
                 data:{
                     username:$form['user'].value,
