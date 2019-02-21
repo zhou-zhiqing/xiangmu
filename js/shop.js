@@ -11,7 +11,11 @@ var shop = (function(){
                 e = e || window.event;
                 var target = e.target || e.srcElement;
                 if(target.nodeName === 'BUTTON'){
-                    
+                    var index = target.getAttribute('index');
+                    var obj = {
+                        count: 1,
+                        ..._this.data[index]
+                    }
                 }
             }
         },
@@ -20,13 +24,14 @@ var shop = (function(){
             sendAjax("Json/shop.json",{
                 success(data){
                     _this.insertData(JSON.parse(data));
-                }
+                } 
             })
         },
         insertData({code,data}){
+            this.data = data;
             if(code == 200){
                 var arr = [];
-                data.forEach(item =>{
+                data.forEach((item,index) =>{
                     var $li = `
                     <li>
                         <a href="#">
@@ -35,7 +40,7 @@ var shop = (function(){
                         </a>
                         <p>会员价：${item.price} </p>
                         <p>已售出：7 </p>
-                        <button class="btn">加入购物车</button>
+                        <button class="btn" index=${index}>加入购物车</button>
                         <a href="#">立即购买</a>
                     </li>`
                     arr.push($li);
@@ -44,6 +49,9 @@ var shop = (function(){
             }else{
                 alert('请求失败');
             }
+        },
+        setData(data){
+            var shopList = localStorage.shopList || '[]';
         }
     }
 }());
