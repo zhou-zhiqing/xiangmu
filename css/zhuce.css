@@ -306,6 +306,10 @@ html,body{
     height: 400px;
     float: left;
 }
+.hide .reg-box div{
+	margin-bottom: 10px;
+	float: left;
+}
 #btn{
 	position: absolute;
 	left:0px;
