@@ -190,6 +190,123 @@ html,body{
 .nav ul li a:hover{
 	color: red;
 }
+/* 主体内容 */
+#spet_warpper{
+	background: #fff;
+	height: 105px;
+}
+#main_warpper{
+	background: #eee;
+	padding: 20px 0 40px 0;
+}
+.main h2{
+	width: 120px;
+	height: 30px;
+	background:red;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.main h2:hover{
+	text-decoration: underline;
+}
+.list{
+	background: #fff;
+}
+.list_top{
+	height: 40px;
+	border-bottom: 1px solid #eee;
+	display: flex;
+	line-height: 40px;
+}
+.check{
+	width: 100px;
+	padding-left: 10px;
+}
+.list_top .span01{
+	width: 600px;
+	text-align: center;
+}
+.list_top span{
+	width: 100px;
+}
+
+
+
+
+.list_footer{
+	border-bottom: 1px solid #666;
+}
+.list_footer div:first-child{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.list_footer div:first-child button{
+	margin-left: 20px;
+	border: none;
+	background: #fff;
+}
+.list_footer div:nth-of-type(2){
+	height: 40px;
+	line-height: 40px;
+}
+.list_footer div:nth-of-type(2) p{
+	float: right;
+	padding-right: 5px;
+}
+.list_footer div:nth-of-type(3){
+	height: 40px;
+	line-height: 40px;
+}
+.list_footer div:nth-of-type(3) span{
+	float: right;
+	padding: 0 10px;
+}
+.total{
+	background: #eee;
+}
+.total p:first-child{
+	height: 60px;
+	line-height: 60px;
+	text-align: right;
+}
+.total p:last-child{
+	height: 60px;
+	line-height: 60px;
+	text-align: right;
+}
+.close{
+	height: 100px;
+	background: #fff;
+	line-height: 100px;
+}
+.close a{
+	font-size: 16px;
+}
+.close a:first-child{
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border: 2px solid red;
+	margin-left: 10px;
+}
+.close a:last-child{
+	float: right;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border: 2px solid red;
+	margin: 30px 10px 0 0;
+	background: red;
+	color: #fff;
+}
 /* 底部导航 */
 #footer{
 	background: #fff;

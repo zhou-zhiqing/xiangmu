@@ -52,6 +52,18 @@ var shop = (function(){
         },
         setData(data){
             var shopList = localStorage.shopList || '[]';
+            shopList = ISON.parse(shopList);
+            for(var i = 0; i < shopList.length; i++){
+                var item = shopList[i];
+                if(item.id == data.id){
+                    item.count += data.count;
+                    break;
+                }
+            }
+            if(i == shopList.length){
+                shopList.push(data);
+            }
+            localStorage.shopList = ISON.stringify(shopList);
         }
     }
 }());
