@@ -227,6 +227,15 @@ nav .classify{
 	left:0px;
 	top:150px;
 }
+.hide{
+	background: white;
+	height: 440px;
+	width: 940px;
+	position: absolute;
+	top: -30px;
+	left: 100px;
+	display: none;
+}
 #btn{
 	position: absolute;
 	left:0px;

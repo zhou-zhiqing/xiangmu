@@ -107,7 +107,7 @@
     <div id="loginbg">
         <div class="login-main ov">
             <div class="login-box">
-                <h2 class="Myorder2">用户登录<a href="#">免费注册>></a></h2>
+                <h2 class="Myorder2">用户登录<a href="#" id="show">免费注册>></a></h2>
             </div>
             <form action="" id="form">
                 <div class="inp">
@@ -122,6 +122,7 @@
                         <a class="icon-wb"></a>
                     </p>
                 </div>
+                <div class="hide"></div>
             </form>
         </div>
     </div>
@@ -202,6 +203,8 @@
     <script src="js/ajax.js"></script>
     <script>
         var $form = document.querySelector('#form');
+        var $show = document.querySelector('#show');
+        var $hide = document.querySelector('.hide');
         btn.onclick = function(e){
             e = e || window.event;
             e.preventDefault(); 
@@ -215,8 +218,10 @@
                     console.log(data);
                 }
             })
-
-            
+           
+        }
+        $show.onclick = function(){
+            $hide.style.display = 'block';
         }
     </script>
 </body>
