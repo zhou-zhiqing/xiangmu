@@ -48,7 +48,6 @@ var bannerSwiper = (function(){
             },false)
         },
         showImage(){
-            console.log(_this.index);
             _this.pointer = _this.index - 1;
         }
     }

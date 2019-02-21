@@ -18,7 +18,6 @@ var navFixed = (function(){
                     _$this.ele.style.position = "fixed";
                     _$this.ele.style.top = 0;
                     _$this.ele.style.left = nav_l + "px";
-                    console.log(_$this.nav_l);
                 }else{
                     _$this.ele.style.position = "relative";
                     _$this.ele.style.left = 0;

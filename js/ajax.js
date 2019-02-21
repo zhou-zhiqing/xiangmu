@@ -31,7 +31,6 @@ function sendAjax(url, options) {
         
         __default.data = JSON.stringify(__default.data);
     }
-    console.log(url);
     xhr.open(__default.type, url, true);
     xhr.send(__default.data);
 

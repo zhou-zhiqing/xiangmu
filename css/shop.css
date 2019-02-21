@@ -304,6 +304,12 @@ html,body{
     border: 2px solid rgb(175, 174, 174);
     display: none;
 }
+.wap a{
+	float: left;
+	width: 60px;
+	height: 36px;
+	margin: 0 20px;
+}
 .classify2{
     margin-top: 10px;
     float: right;
@@ -332,8 +338,50 @@ html,body{
     margin-top: 10px;
     float: right;
     width: 960px;
-    height: 600px;
+    height: 720px;
     background: #fff;
+}
+.commo ul li{
+	float: left;
+    width: 210px;
+    height: 360px;
+    padding: 0 15px;
+}
+.commo ul li p:nth-of-type(1){
+    color: red;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.commo ul li p:nth-of-type(2){
+    color: #666;
+}
+.commo ul li a img{
+    width: 210px;
+    height: 210px;
+}
+.commo ul li .btn{
+    width: 80px;
+    height: 30px;
+    background:darkred;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 15px;
+	border-radius: 5px;
+	border: none;
+}
+.commo ul li a:nth-of-type(2){
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: gold;
+    color: #000;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 /* 底部导航 */
 #footer{
