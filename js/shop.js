@@ -34,7 +34,7 @@ var shop = (function(){
                 data.forEach((item,index) =>{
                     var $li = `
                     <li>
-                        <a href="#">
+                        <a href="infor.html">
                             <img src="${item.src}" />
                             <span>${item.name}</span>
                         </a>
